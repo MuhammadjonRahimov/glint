@@ -1,4 +1,3 @@
-
 new Swiper('.clients-slider', {
 	// стрелки
 	navigation: {
@@ -108,4 +107,15 @@ $(document).ready(function () {
 		}
 
 	})
+})
+
+
+function setScrollIntoView(top) {
+	selected.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+const selected = document.querySelector('.about');
+const arrowDown = document.querySelector('.fa-chevron-down');
+arrowDown.addEventListener('click', function (e) {
+	e.preventDefault();
+	setScrollIntoView(true);
 })
