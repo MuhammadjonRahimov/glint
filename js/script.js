@@ -15,9 +15,9 @@ new Swiper('.clients-slider', {
 	},
 	// упр... клавиатурой
 	keyboard: {
-		enabled: true,
+		enabled: false,
 		onlyInViewport: true,
-		//   pageUpDown: true,
+		pageUpDown: false,
 	},
 	// мышь
 	mousewheel: {
